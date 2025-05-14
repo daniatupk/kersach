@@ -2,301 +2,355 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Курсовая работа</title>
+    <title>Резюме Даниила Тупика</title>
     <style>
-    /* Шапка */
-    body, html {
-        height: 100%;
-        margin: 0;
-        font-family: Arial;
-    }
-    .container {
-        background-color: #ffffff;
-        width: 720px;
-        min-height: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .head {
-        width: 680px; 
-        height: 90px;
-    }
-    .header {
-        background: #3950f9;
-        width: 680px; 
-        height: 90px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-    .logo {
-        width: 70px;
-        height: 70px;
-        background-image:url('https://cdn-icons-png.flaticon.com/128/5371/5371459.png');
-        background-repeat: no-repeat;
-        background-size: 70px;
-    }
-    .search-container {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
-    .search-bar {
-        padding: 8px 20px;
-        border-radius: 15px;
-        border: none;
-        outline: none;
-        width: 200px;
-    }
-    /* Навигация */
-    .nav {
-        display: flex;
-        gap: 10px;
-    }
-    .profile {
-        width: 70px;
-        height: 70px;
-        background-image:url('https://cdn-icons-png.flaticon.com/128/7168/7168507.png');
-        background-repeat: no-repeat;
-        background-size: 70px;
-        transform: scale(0.8);
-    }
-    .profile:hover {
-        transform: scale(1) rotate(360deg);
-        transition: 0.8s;
-    }
-    .profile:active {
-        transform: scale(0.6);
-        transition: 0.2s;
-    }
-    .cart {
-        width: 70px;
-        height: 70px;
-        background-image:url('https://cdn-icons-png.flaticon.com/128/711/711897.png');
-        background-repeat: no-repeat;
-        background-size: 70px;
-        transform: scale(0.6);
-    }
-    .cart:hover {
-        transform: scale(0.8) rotate(360deg);
-        transition: 0.8s;
-    }
-    .cart:active {
-        transform: scale(0.4);
-        transition: 0.2s;
-    }
-    .tickets {
-        width: 70px;
-        height: 70px;
-        background-image:url('https://cdn-icons-png.flaticon.com/128/320/320375.png');
-        background-repeat: no-repeat;
-        background-size: 70px;
-        transform: scale(0.6);
-    }
-    .tickets:hover {
-        transform: scale(0.8) rotate(360deg);
-        transition: 0.8s;
-    }
-    .tickets:active {
-        transform: scale(0.4);
-        transition: 0.2s;
-    }
-    /* Подпись */
-    .center-blocks {
-        width: 720px; 
-        flex: 1 0 auto;
-        display: flex;          
-        flex-direction: column; 
-    }
-    .above {
-        width: 690px;
-        height: 50px;
-        margin: 5px auto;      
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .above h1 {
-        width: 100%; 
-        text-align: center; 
-        font-family: Fantasy;
-        letter-spacing: 8px;
-        font-size: 40px;
-        color: #090D29;
-    }
-    .line {
-        width: 100%;
-        height: 20px;
-        background: #3950f9;
-    }
-    
-    /* Карусель топа */
-    .carousel-section {
-        padding: 20px;
-    }
-    .section-title {
-        font-size: 25px;
-        color: #090D29;
-        margin-bottom: 15px;
-    }
-    .carousel-container {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-    .carousel-track {
-        display: flex;
-    }
-    .event-card {
-        min-width: 220px;
-        margin-right: 15px;
-        background: #45458c;
-        border-radius: 20px;
-        overflow: hidden;
-    }
-    .event-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .event-info {
-        padding: 12px;
-        display: none;
-    }
-    .event-card:hover .event-info {
-    	display: block;
-    }
-    .event-card:hover .event-image {
-    	height: 300px;
-    }
-    .event-title {
-        font-size: 16px;
-        margin: 0 0 8px;
-        color: #fcfcfd;
-    }
-    .event-date, .event-price {
-        font-size: 14px;
-        color: #d0d0e2;
-        margin: 4px 0;
-    }
-    .carousel-nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-    }
-    .foot {
-        width: 720px;
-    }
-    .footer {
-        background-color: #3950f9;
-        width: 705px;
-        height: 50px;
-        color: #090D29;
-        padding-top: 35px;
-        padding-left: 15px;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            background-color: #CAB9EA;
+            color: #5341A3;
+            background-image: url('images/A4\ -\ 1.png');
+            background-position: center;  
+            background-repeat: no-repeat;
+            background-position-y: 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            font-family: Times;
+        }
+
+        .name-title {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-block {
+            display: flex;
+            align-items: center;
+        }
+        
+        .subscription {
+            width: 170px;
+            height: 250px;
+            background-color: #D9D9D9;
+            border-radius: 15px;
+            font-display: flex;
+            flex-direction: column;
+            align-content: end;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .profile {
+            padding-bottom: 30px;
+        }
+
+        .page-title {
+            font-size: 70px;
+            transform:rotate(-90deg);
+            margin-right: -80px;
+        }
+
+        .surname {
+            font-size: 48px;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        .firstname {
+            font-size: 48px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .title {
+            font-size: 42px;
+            letter-spacing: 16px;
+            font-weight: lighter;
+            color: #5341A3;
+        }
+
+        .age {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .resume-content {
+            display: flex;
+            gap: 40px;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 3px;
+            background-color: #444;
+            margin-top: 5px;
+        }
+
+        .about-me-text {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: Arial;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+            font-family: Arial;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 30px;
+            line-height: 1.4;
+        }
+
+        .skills-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 20px;
+            height: 20px;
+            background-image: url("https://cdn-icons-png.flaticon.com/128/10088/10088871.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: rotate(270deg) scale(1.06);
+        }
+
+        .education-item img {
+            width: 21px;
+            height: 21px;
+            margin-right: 10px;
+            transform: rotate(270deg);
+        }
+
+        .education-period {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .education-institution {
+            padding-left: 15px;
+        }
+
+        .contacts-list {
+            list-style-type: none;
+            font-family: Arial;
+        }
+
+        .contacts-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contacts-list i {
+            margin-right: 10px;
+            color: #666;
+        }
+
+        .contacts-list img{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        /* Стили для таблицы hard skills */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .skills-table td {
+            padding: 8px;
+            text-align: center;
+            border: none;
+        }
+
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+		.skill-level {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            transform: rotate(270deg);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="head">
-            <div class="header">
-                <div class="search-container">
-                    <div class="logo"></div>
-                    <input type="text" class="search-bar" placeholder="Всё и все здесь...">
+        <header class="resume-header">
+        	<div class = "right-block">
+            	<div class="name-title">
+                	<h1 class="surname">Тупик</h1>
+                	<h1 class="firstname">Даниил</h1>
+            	</div>
+            </div>
+            <div class = "left-block">
+            	<div class = "page-title">
+            		<h1 class="title">resume</h1>
                 </div>
-                <div class="nav">
-                    <div class="tickets"></div>
-                    <div class="cart"></div>
-                    <div class="profile"></div>
+                <div class = "subscription">
+                    <div class = "profile">
+                        <img src = "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"/>
+            		</div>
+                    <p class="profession">graphic designer</p>
+                	<p class="age">20 y.o.</p>
                 </div>
             </div>
-        </div>
-        <div class="center-blocks">
-            <div class="above">
-                <h1>DIVE IN</h1>
-            </div>
-            <div class="line"></div>
-            
-            <!-- Карусель мероприятий топ -->
-            <div class="carousel-section">
-                <h2 class="section-title">Сейчас в топе</h2>
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <!-- Карточка 1 -->
-                        <div class="event-card">
-                            <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-78/368/883/616/215/0/600007209339b0.jpeg" alt="мероприятие" class="event-image">
-                            <div class="event-info">
-                                <h3 class="event-title">Мероприятие 1</h3>
-                                <p class="event-date">Дата: </p>
-                                <p class="event-price">Цена:</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Карточка 2 -->
-                        <div class="event-card">
-                            <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-78/368/883/616/215/0/600007209339b0.jpeg" alt="мероприятие" class="event-image">
-                            <div class="event-info">
-                                <h3 class="event-title">Мероприятие 2</h3>
-                                <p class="event-date">Дата: </p>
-                                <p class="event-price">Цена:</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Карточка 3 -->
-                        <div class="event-card">
-                            <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-78/368/883/616/215/0/600007209339b0.jpeg" alt="мероприятие" class="event-image">
-                            <div class="event-info">
-                                <h3 class="event-title">Мероприятие 3</h3>
-                                <p class="event-date">Дата: </p>
-                                <p class="event-price">Цена:</p>
-                            </div>
-                        </div>
+        </header>
+
+        <div class="resume-content">
+            <div class="left-column">
+                <div class="section about-me">
+                    <h3 class="section-title">about me</h3>
+                    <p class="about-me-text">
+                        Люблю создавать яркие, оригинальные работы, которые не только привлекают внимание, но и передают идею бренда. Интересуюсь 3D-моделированием и разработкой персонажей, что позволяет мне добавлять уникальные элементы в проекты.
+                    </p>
+                </div>
+                
+                <section class="section education">
+                    <h3 class="section-title">education</h3>
+                    <div class="education-item">
+                        <p class="education-period">2024 - 2027</p>
+                        <p class="education-institution"> <img src = "https://cdn-icons-png.flaticon.com/128/10088/10088871.png"/>СПБГУПТД ВШПМ</p>
                     </div>
-                </div>
+                </section>
+
+                <section class="section contacts">
+                    <h3 class="section-title">contacts</h3>
+                    <ul class="contacts-list">
+                        <li><img src = "https://cdn-icons-png.flaticon.com/128/8016/8016447.png"/> +7 (981) 830 34-22</li>
+                        <li><img src = "https://cdn-icons-png.flaticon.com/128/11935/11935239.png"/> nuzulor200515@gmail.com</li>
+                        <li><img src = "https://cdn-icons-png.flaticon.com/128/87/87413.png"/> @shhllka</li>
+                    </ul>
+                </section>
             </div>
-            	<!-- Карусель мероприятий "Для Вас" -->
-            <div class="carousel-section">
-                <h2 class="section-title">Для Вас</h2>
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <!-- Карточка 1 -->
-                        <div class="event-card">
-                            <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-78/368/883/616/215/0/600007209339b0.jpeg" alt="мероприятие" class="event-image">
-                            <div class="event-info">
-                                <h3 class="event-title">Мероприятие 1</h3>
-                                <p class="event-date">Дата: </p>
-                                <p class="event-price">Цена:</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Карточка 2 -->
-                        <div class="event-card">
-                            <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-78/368/883/616/215/0/600007209339b0.jpeg" alt="мероприятие" class="event-image">
-                            <div class="event-info">
-                                <h3 class="event-title">Мероприятие 2</h3>
-                                <p class="event-date">Дата: </p>
-                                <p class="event-price">Цена:</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Карточка 3 -->
-                        <div class="event-card">
-                            <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-78/368/883/616/215/0/600007209339b0.jpeg" alt="мероприятие" class="event-image">
-                            <div class="event-info">
-                                <h3 class="event-title">Мероприятие 3</h3>
-                                <p class="event-date">Дата: </p>
-                                <p class="event-price">Цена:</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="right-column">
+            	<section class="section soft-skills">
+                    <h3 class="section-title">soft skills</h3>
+                    <ul class="skills-list">
+                        <li>Креативность и художественный вкус</li>
+                        <li>Внимание к деталям</li>
+                        <li>Умение работать в команде и самостоятельно</li>
+                        <li>Стратегическое мышление и планирование</li>
+                        <li>Ответственность и организованность</li>
+                        <li>Гибкость и готовность к обучению</li>
+                        <li>Способность работать в стрессовых ситуациях</li>
+                        <li>Ориентированность на результат</li>
+                    </ul>
+                </section>
+                
+                
+                <section class="section hard-skills">
+                    <h3 class="section-title">hard skills</h3>
+                    <table class="skills-table">
+                        <tr>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968704.png" class="skill-icon">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/10088/10088871.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/10088/10088871.png" class="skill-level">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/688/688115.png" class="skill-icon">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/10088/10088871.png" class="skill-level">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/688/688113.png" class="skill-icon">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/319/319873.png" class="skill-level">
+                            </td>
+                            <td>
+                                <img src="https://cdn-icons-png.flaticon.com/128/10088/10088871.png" class="skill-level">
+                            </td>
+                        </tr>
+                    </table>
+                </section>        
             </div>
-        </div>
-    	<div class="foot">
-            <div class="footer">2025, Тупик Д. Ю.</div>
         </div>
     </div>
 </body>
